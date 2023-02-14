@@ -1,3 +1,5 @@
+package Basics;
+
 public class forLoops {
     public static void main(String[] args) {
         // For loops will repeat themselves until the condition is false.
