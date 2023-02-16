@@ -1,9 +1,11 @@
 package AS2;
 
-public class Q6 {
+public class Q9 {
     public static void main(String[] args) {
-        for(int num = 10; num <= 50; num+=5) {
+        int num = 10;
+        while(num <= 50) {
             System.out.println(num);
+            num += 5;
         }
     }
 }
