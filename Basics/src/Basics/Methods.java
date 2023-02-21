@@ -1,8 +1,8 @@
 package Basics;
 import java.util.Scanner;
-public class Functions {
+public class Methods {
     static Scanner scnr = new Scanner(System.in);
-    public static String getName() { //Functions can be called Later in a program when needed. Uses "String" because it will return a String
+    public static String getName() { //Methods can be called Later in a program when needed. Uses "String" because it will return a String
         String name =  scnr.nextLine();
         return name; //Returns the string to the block of code that called it.
     }
@@ -20,16 +20,16 @@ public class Functions {
     }
     public static void main(String[] args) {
         System.out.print("What is your name?: ");
-        String name = getName(); //Call the function as a variable
+        String name = getName(); //Call the Method as a variable
         System.out.println(name);
         System.out.print("Enter a temperature in Fahrenheit: ");
         float temp = getTemp();
-        System.out.println(temp);
-        System.out.print("Enter the cost of item: ");
+        System.out.printf("The Temperature in Celsius is " + "%.2f",temp);
+        System.out.print("\nEnter the cost of an item: ");
         float cost1 = scnr.nextFloat();
         System.out.print("Enter the cost of another item: ");
         float cost2 = scnr.nextFloat();
-        float avgCost = getCost(cost1,cost2); //Transfers variables from one method to another.
-        System.out.println("The Average cost of both items is $" + avgCost);
+        float avgCost = getCost(cost1,cost2); //Transfers variables from one Method to another.
+        System.out.printf("The Average cost of both items is $" + "%.2f",avgCost);
     }
 }
