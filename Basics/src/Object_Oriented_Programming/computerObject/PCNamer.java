@@ -40,7 +40,7 @@ public class PCNamer {
                 byteNotation = "TB";
                 System.out.println("Drive " + num+ ": "+ drives[num] + byteNotation);
             } else {
-                System.out.println("Drive" + num + ": " + drives[num] + byteNotation);
+                System.out.println("Drive " + num + ": " + drives[num] + byteNotation);
             }
         }
         System.out.println(PCList.price);
