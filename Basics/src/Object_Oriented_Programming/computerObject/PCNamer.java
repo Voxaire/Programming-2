@@ -17,26 +17,32 @@ public class PCNamer {
 
         System.out.print("How many storage drives does this computer have?: ");
         PCList.storageNum = scnr.nextInt();
-        
 
-        for (int num = 0; num <= PCList.storageNum; num++)
-        System.out.print("What is the storage capacity of drive " + num + "? (In GB): ");
-        String storageConverter = "GB";
+        float drives[] = new float[PCList.storageNum];
+
+        for (int num = 0; num < PCList.storageNum; num++) {
+            int count = num + 1;
+            System.out.println(PCList.storageNum);
+            System.out.print("What is the storage capacity of drive " + count + "? (In GB): ");
+            drives[num] = scnr.nextInt();
+        }
 
         System.out.print("What is the price of computer 1?: $");
         PCList.price = scnr.nextInt();
 
-        PCList.storage = scnr.nextInt();
-        if (PCList.storage >= 1000) {
-            PCList.storage /= 1000;
-            storageConverter = "TB";
-        }
-
-
         System.out.println(PCList.brand);
         System.out.println(PCList.CPU);
         System.out.println(PCList.GPU);
-        System.out.println(PCList.storage + storageConverter);
+        for (int num = 0; num < PCList.storageNum; num++) {
+            String byteNotation = "GB";
+            if (drives[num] >= 1000) {
+                drives[num] /= 1000;
+                byteNotation = "TB";
+                System.out.println("Drive " + num+ ": "+ drives[num] + byteNotation);
+            } else {
+                System.out.println("Drive" + num + ": " + drives[num] + byteNotation);
+            }
+        }
         System.out.println(PCList.price);
 
         PCObject.PC PCList2 = new PCObject.PC();
