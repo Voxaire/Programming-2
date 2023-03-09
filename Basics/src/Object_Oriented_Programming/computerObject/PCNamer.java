@@ -22,7 +22,6 @@ public class PCNamer {
 
         for (int num = 0; num < PCList.storageNum; num++) {
             int count = num + 1;
-            System.out.println(PCList.storageNum);
             System.out.print("What is the storage capacity of drive " + count + "? (In GB): ");
             drives[num] = scnr.nextInt();
         }
