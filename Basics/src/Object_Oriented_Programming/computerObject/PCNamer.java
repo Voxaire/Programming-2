@@ -37,9 +37,9 @@ public class PCNamer {
             if (drives[num] >= 1000) {
                 drives[num] /= 1000;
                 byteNotation = "TB";
-                System.out.println("Drive " + num+ ": "+ drives[num] + byteNotation);
+                System.out.println("Drive " + num+ ": "+ drives[num] +" "+ byteNotation);
             } else {
-                System.out.println("Drive " + num + ": " + drives[num] + byteNotation);
+                System.out.println("Drive " + num + ": " + drives[num] +" "+ byteNotation);
             }
         }
         System.out.println(PCList.price);
