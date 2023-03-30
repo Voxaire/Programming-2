@@ -26,7 +26,7 @@ class Game {
     boolean isCorrectNumber(){
         noOfGuess++;
         if (inputNumber == number) {
-            System.out.format("You guessed it right! It was %d\n You gussed it %d attempts", number, noOfGuess);
+            System.out.format("You guessed it right! It was %d\n You gussed in %d attempts", number, noOfGuess);
             return true;
 
         } else if (inputNumber < number) {
