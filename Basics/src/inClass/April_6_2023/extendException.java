@@ -19,7 +19,7 @@ public class extendException {
         if(a < 9) {
             try {
                 throw new ArithmeticException("This is an Exception");
-            } 
+            }
         }
     }
 
