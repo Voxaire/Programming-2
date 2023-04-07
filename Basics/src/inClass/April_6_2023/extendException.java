@@ -16,12 +16,5 @@ public class extendException {
     public static void main(String[] args) {
         int a;
         Scanner scnr = new Scanner(System.in);
-        if(a < 9) {
-            try {
-                throw new ArithmeticException("This is an Exception");
-            }
         }
     }
-
-
-}

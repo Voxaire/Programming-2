@@ -18,9 +18,9 @@ class library {
         System.out.println("The available books are: ");
         for (String book: this.books) {
             if (book == null) {
-                break;
+                continue;
             }
-                System.out.println("* ");
+                System.out.println("* " + book);
         }
     }
     void issueBook(String book){
@@ -40,6 +40,8 @@ class library {
 }
 public class Main {
     public static void main(String[] args) {
+
+        String num = "345";
         library gswLib = new library();
         gswLib.addBooks("Think and grow rich");
         gswLib.addBooks("Algorithms");
@@ -50,6 +52,7 @@ public class Main {
         gswLib.showAllavailable();
         gswLib.returnBook("C++");
         gswLib.showAllavailable();
+        System.out.println(String.valueOf(345).length());
     }
 
 }
