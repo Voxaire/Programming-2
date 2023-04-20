@@ -39,6 +39,7 @@ class library{
 
     void returnBook(String book){
         addBooks(book);
+        System.out.println(book + " has been returned!");
     }
 }
 
