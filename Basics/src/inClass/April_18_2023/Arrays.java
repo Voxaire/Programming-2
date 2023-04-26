@@ -1,7 +1,6 @@
 package inClass.April_18_2023;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Arrays {
@@ -47,6 +46,8 @@ public class Arrays {
         stringList.add("Green");
         stringList.add("Blue");
         stringList.add("Black");
+        System.out.println(stringList);
+        stringList.remove("Black");
         System.out.println(stringList);
 
         if (stringList.contains("Red")) {

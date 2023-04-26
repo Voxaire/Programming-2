@@ -8,7 +8,7 @@ public class tryCatch {
         try {
             System.out.println("1000 Divided by K is: " + 1000 / k);
         } catch (Exception e) {
-            System.out.println("1000 cannot by divded by 0");
+            System.out.println("1000 cannot by divided by 0");
         } finally {
             System.out.println("The code as finished executing");
         }
