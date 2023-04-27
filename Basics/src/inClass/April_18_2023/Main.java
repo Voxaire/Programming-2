@@ -3,9 +3,8 @@ package inClass.April_18_2023;
 import java.util.ArrayList;
 
 class Book {
-    int id;
+    int id, quantity;
     String name, author, publisher;
-    int quantity;
 
     Book(int id,String name, String author, String publisher, int quantity) {
         this.id = id;
@@ -30,5 +29,4 @@ public class Main {
             System.out.println(b.id+" "+ b.name+" "+ b.author+" "+b.publisher+" "+b.quantity);
         }
     }
-
 }
